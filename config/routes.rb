@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
+  root 'static_pages#home'
   get 'static_pages/help'
-
   get 'static_pages/about'
+  get 'static_pages/contact'
+  get 'static_pages/signup'
+  get 'static_pages/login'
 
   # The priority is based upon order of creation: first created -> highest priority.
-
-  root 'application#gut_check'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
